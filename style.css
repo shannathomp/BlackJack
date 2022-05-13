@@ -1,0 +1,95 @@
+h1{
+    /* border:2px solid red; */
+    text-align: center;
+    color:yellowgreen;
+}
+
+body{
+  font-family: Arial, Helvetica, sans-serif; 
+  text-align: center;
+  /* background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxILeZdj3-G1jrHp--EmC1OuH6ml0uYSwltg&usqp=CAU); */
+    /* background-image: url(https://th.bing.com/th?q=Water+Pattern+Vector&w=120&h=120&c=1&rs=1&qlt=90&cb=1&dpr=1.25&pid=InlineBlock&mkt=en-US&cc=US&setlang=en&adlt=moderate&t=1&mw=247); */
+}
+.container{
+    grid-template-areas: 'image header header header header ad1 ad1'
+                         /* 'image header header header header image2 ad1' */
+                          /* 'image3 game game game game image4 ad1' */
+                          /* 'image3 game game game game image4 ad1' */
+                          'footer footer footer footer footer footer footer';
+                        
+display:grid;
+width: 100vw;
+height: 100vh
+}
+
+.gofish{
+
+    border: 1px solid red;
+}
+/* #boxone{
+    height: 200px;
+    background-image: url();
+    grid-area: image;
+} */
+
+#boxfive{
+   width: 65%;
+    height: 700px;
+    padding-right: 2px;
+    padding-left: 30%;
+    grid-area: header;
+    /* background-image: url(https://www.bing.com/th/id/OGC.4ae82ddf2c85dae82ba9dedd9bf53452?pid=1.7&rurl=https%3a%2f%2fcdn.dribbble.com%2fusers%2f998381%2fscreenshots%2f5391225%2fgo_fishing.gif&ehk=AKW2jipwvkQwux9tWo4iNBTCuziGcGxl4f3xX5e9DXQ%3d); */
+
+
+ }
+#boxthree{
+    display:flex;
+grid-area: ad1;
+background-image: url(https://s3.envato.com/files/156745980/Preview.jpg);
+/* padding-right: 20px; */
+width: 50%;
+height:100%;
+
+
+    /* height: 300px */
+     
+} 
+#boxfour{
+    grid-area:ad1;
+    
+}
+#boxsix{
+    grid-area:ad2 ;
+}
+/* #boxeight{
+    grid-area: game;
+} */
+/* #boxfive{
+    grid-area: header;
+    height:50px;
+    width:75%
+} */
+/* button{
+    font-size: 20px;
+    background-color:lightskyblue;
+} */
+
+#boxnine{
+    grid-area: footer;
+    height:150px;
+    width:100%;
+    
+}
+.card{
+    color:red;
+    background-color: aqua;
+}
+#computerCards img{
+    text-align: center;
+    height:175px;
+    width:125px;
+}
+#player1Cards img{
+height:175px;
+width:125px;
+}
