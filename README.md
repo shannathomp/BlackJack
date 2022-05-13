@@ -1,27 +1,29 @@
 ## head
-Go Fish Game. Now BlackJack Game
+ BlackJack Game
 
 ## Description
-The Go Fish Game is designed to help, introduce, and interest the young audience into the world of finance.
+BlackJack game is a game of an exciting experience. It is a probability game of 21. If the computer beats you to 21 they win.
 
 ## Rules
 1.The rules of the game.
-2.Each player starts off with 7 cards, of a 52 card deck.
-<!-- 3.They use cash to pay for the toys that they want from the opposing player. -->
-4.Each player must ask the other player if they have the toy that they are looking for.
-5.If the oposing player do not have the card, the player must pull a card from the deck.
-6.To get a book of toys the player must own for toys.
-7.To win the game, the player must bankrupt the other player or have the most books when the deck is cleared.
+2.Each player starts off with 2 cards, of a 52 card deck.
+3.Each player must have the goal in mind to get to 21 or close to 21 to beat the oppenent. 
+4.The player that beats the other player to 21 is the winner.
+5.If you or the oppenent goes over 21 you lose.
 
 ## Wireframe
 This is the website to my wireframe.
 <a href"https://wireframe.cc/UUfxzM">Wireframe</a>
 
 ## Explanations of specific Technologies 
+The specific Technologies used was Software Technologies. The software used was VS code to help make the game function.
+
 ### Approach Taken
 my first approach was to create a midspace for the game and add some ads. 
-## Unsolved Problems
-my unsolved problem was to get the cards to draw a deck and go fish.
+## Unsolved Problems/problems
+1.my unsolved problem was to get the cards to draw a deck.
+2.As I moved on to blackjack my problems were getting the page to refresh with a refresh button.
+3.My other problem was getting the cards to show up on the scrren.
 
 ## Link to Hosted Site
 ## Installation Instructions

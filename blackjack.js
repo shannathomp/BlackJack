@@ -1,11 +1,11 @@
-var dealerSum = 0;
-var yourSum = 0;
+let dealerSum = 0;
+let yourSum = 0;
 
-var dealerAceCount = 0;
-var yourAceCount = 0; 
+let dealerAceCount = 0;
+let yourAceCount = 0; 
 
-var hidden;
-var deck;
+let hidden;
+let deck;
 
 var canHit = true; //allows the player (you) to draw while yourSum <= 21
 
@@ -67,6 +67,7 @@ function startGame() {
     console.log(yourSum);
     document.getElementById("hit").addEventListener("click", hit);
     document.getElementById("stay").addEventListener("click", stay);
+    
 
 }
 
@@ -97,7 +98,8 @@ function stay() {
 
     let message = "";
     if (yourSum > 21) {
-        message = "You Lose!";
+        message = "You Lose!"; 
+    
     }
     else if (dealerSum > 21) {
         message = "You win!";
@@ -107,15 +109,22 @@ function stay() {
         message = "Tie!";
     }
     else if (yourSum > dealerSum) {
-        message = "You Win!";
+        message = "Winner Winner Chciken Dinner!";
     }
     else if (yourSum < dealerSum) {
-        message = "You Lose!";
+        message = "So Sad You Lost!";
     }
 
     document.getElementById("dealer-sum").innerText = dealerSum;
     document.getElementById("your-sum").innerText = yourSum;
     document.getElementById("results").innerText = message;
+}
+
+
+function refreshMe(){
+    console.log(refreshMe);
+   
+
 }
 
 function getValue(card) {
@@ -145,14 +154,17 @@ function reduceAce(playerSum, playerAceCount) {
     }
     return playerSum;
 }
+const refreshbtn = document.querySelector('#refresh')
+console.log(refreshbtn);
+refreshbtn.textContent = 'refresh'
 
-const refresh = document.querySelector('#refresh')
-const refreshbtn = document.createElement('refreshbtn')
+refreshbtn.addEventListener('click', function(){
+   window.location.reload(true);
+    
+})
 
-refreshbtn.appendChild('click', function()){
-    dealerAceCount = 0;
-    yourAceCount = 0;   
-}
+
+
 
 // console.log(`running script`);
 
