@@ -45,6 +45,7 @@ body {
     width:60px;
     height:60px;
     padding-top: 5px;  
+
 }
 #results{
     color:blue;
@@ -55,4 +56,12 @@ start{
     width: 100px;
     height: 50px;
     font-size: 20px;
+}
+#color1{
+    color:white;
+    font-size: 30px;
+}
+#color2{
+    color:white;
+    font-size: 30px;
 }

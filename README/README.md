@@ -26,5 +26,6 @@ my first approach was to create a midspace for the game and add some ads.
 3.My other problem was getting the cards to show up on the scrren.
 
 ## Link to Hosted Site
+https://shannathomp.github.io/BlackJack/
 ## Installation Instructions
 no installation can play online
