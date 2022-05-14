@@ -122,13 +122,12 @@ function stay() {
 
     let message = "";
     if (yourSum > 21) {
-        message = "You Lose!"; 
-    
+        message = "So Sad You Lost!"; 
     }
     else if (dealerSum > 21) {
-        message = "You win!";
+        message = "Winner Winner Chciken Dinner!";
     }
-    //both you and dealer <= 21
+    // both you and dealer <= 21
     else if (yourSum == dealerSum) {
         message = "Tie!";
     }
@@ -180,11 +179,11 @@ function reduceAce(playerSum, playerAceCount) {
     return playerSum;
 }
 
-console.log(refreshbtn);
+// console.log(refreshbtn);
 
 refreshbtn.addEventListener('mouseover', function(){
    window.location.reload(true);
-    
+  
 })
 
 
