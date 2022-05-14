@@ -23,17 +23,20 @@ body {
     width: 100px;
     height: 50px;
     font-size: 20px;
+    border-radius: 10px;
 }
 
 #stay {
     width: 100px;
     height: 50px;
     font-size: 20px;
+    border-radius: 10px;
 }
 #refresh{
     width: 100px;
     height: 50px;
     font-size: 20px;
+    border-radius: 10px;
 }
 #dealerpic{
     width:100px;
