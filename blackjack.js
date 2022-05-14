@@ -30,6 +30,11 @@ window.onload = () => {
     startGame();
 }
 
+// 
+
+
+
+
 function buildDeck() {
     let values = ["A", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K"];
     let types = ["C", "D", "H", "S"];
@@ -40,7 +45,9 @@ function buildDeck() {
             deck.push(values[j] + "-" + types[i]); //A-C -> K-C, A-D -> K-D
         }
     }
-    // console.log(deck);
+    console.log(buildDeck);
+ 
+    
 }
 
 function shuffleDeck() {
@@ -181,6 +188,13 @@ refreshbtn.addEventListener('mouseover', function(){
 })
 
 
+
+
+// const start = document.createElement('button')
+// const startbtn = document.querySelector('#div1')
+// start.textContent = 'start'
+// startbtn.append(start)
+// console.log(start);
 
 
 // console.log(`running script`);
