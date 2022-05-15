@@ -19,8 +19,6 @@ let yourSum = 0;
 let dealerAceCount = 0;
 let yourAceCount = 0; 
 
-let hidden;
-let deck;
 
 let canHit = true; //allows the player to draw while yourSum <= 21
 
@@ -37,12 +35,12 @@ window.onload = () => {
 
 function buildDeck() {
     let values = ["A", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K"];
-    let types = ["C", "D", "H", "S"];
+    let Suits = ["C", "D", "H", "S"];
     deck = [];
 
-    for (let i = 0; i < types.length; i++) {
+    for (let i = 0; i < Suits.length; i++) {
         for (let j = 0; j < values.length; j++) {
-            deck.push(values[j] + "-" + types[i]); //A-C -> K-C, A-D -> K-D
+            deck.push(values[j] + "-" + Suits[i]); //A-C -> K-C, A-D -> K-D
         }
     }
     console.log(buildDeck);
@@ -66,10 +64,10 @@ function startGame() {
     dealerAceCount += checkAce(hidden);
     // console.log(hidden);
     // console.log(dealerSum);
-    while (dealerSum < 17) {
+    while (dealerSum < 15) {//total sum for dealer can be no less than 15 to play.
         //<img src="./cards/4-C.png">
         let cardImg = document.createElement("img");
-        let card = deck.pop(); //pushes card into deck
+        let card = deck.pop(); //pulls card from deck
         cardImg.src = "./cards/" + card + ".png";
         dealerSum += getValue(card);
         dealerAceCount += checkAce(card);
@@ -107,7 +105,7 @@ function hit() {
     yourAceCount += checkAce(card);
     playercards.append(cardImg);
 
-    if (reduceAce(yourSum, yourAceCount) > 21) { //A, J, 8 -> 1 + 10 + 8
+    if (reduceAce(yourSum, yourAceCount) > 21) { //not allowing to keep drawing cards after pass 21.
         canHit = false;
     }
 
@@ -152,7 +150,7 @@ function refreshMe(){
 }
 
 function getValue(card) {
-    let data = card.split("-"); // "4-C" -> ["4", "C"]
+    let data = card.split("-"); // "4-C" -> ["4", "C"] split it up into subsplits
     let value = data[0];
 
     if (isNaN(value)) { //A J Q K
@@ -161,7 +159,7 @@ function getValue(card) {
         }
         return 10;
     }
-    return parseInt(value);
+    return parseInt(value);//returns the first argument to a string, then returns an integer or NaN.
 }
 
 function checkAce(card) {
@@ -170,7 +168,7 @@ function checkAce(card) {
     }
     return 0;
 }
-
+//reduces the ace 1 time if have not reached 21
 function reduceAce(playerSum, playerAceCount) {
     while (playerSum > 21 && playerAceCount > 0) {
         playerSum -= 10;

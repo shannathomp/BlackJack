@@ -16,16 +16,22 @@ This is the website to my wireframe.
 <a href"https://wireframe.cc/UUfxzM">Wireframe</a>
 
 ## Explanations of specific Technologies 
-The specific Technologies used was Software Technologies. The software used was VS code to help make the game function.
+The specific Technologies used was Software Technologies. The software used was VS code to help make the game function. Within the Software, I used Javascript, Html, and Css.
 
 ### Approach Taken
 my first approach was to create a midspace for the game and add some ads. 
 ## Unsolved Problems/problems
 1.my unsolved problem was to get the cards to draw a deck.
 2.As I moved on to blackjack my problems were getting the page to refresh with a refresh button.
-3.My other problem was getting the cards to show up on the scrren.
+3.My other problem was getting the cards to show up on the screen.
 
 ## Link to Hosted Site
 https://shannathomp.github.io/BlackJack/
 ## Installation Instructions
 no installation can play online
+
+## Resources
+1.w3 Schools
+2.youtube
+3.Class Videos
+4.developer.mozilla.org
