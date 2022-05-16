@@ -13,7 +13,7 @@ BlackJack game is a game of an exciting experience. It is a probability game of 
 
 ## Wireframe
 This is the website to my wireframe.
-<a href"https://wireframe.cc/UUfxzM">Wireframe</a>
+"https://wireframe.cc/UUfxzM"
 
 ## Explanations of specific Technologies 
 The specific Technologies used was Software Technologies. The software used was VS code to help make the game function. Within the Software, I used Javascript, Html, and Css.
